@@ -1,0 +1,49 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset 'utf-8';
+@import 'custom'; // variables for bootstrap
+@import 'bootstrap';
+
+$z-index-navbar: 10;
+$footer-height: 60px;
+
+body {
+  margin-bottom: $footer-height;
+}
+
+.site-header {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $z-index-navbar;
+}
+
+body > .site-header + .container {
+  padding: 60px 15px 0;
+}
+
+.container {
+  max-width: 720px;
+}
+
+.site-footer {
+  background-color: $gray-lightest;
+  bottom: 0;
+  height: $footer-height;
+  line-height: 60px;
+  position: absolute;
+  width: 100%;
+
+  ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      display: inline-block;
+      list-style-type: none;
+    }
+  }
+}

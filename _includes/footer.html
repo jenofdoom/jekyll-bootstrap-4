@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="text-muted">&copy; {{ site.title | escape }}</span>
+      </div>
+      {% if site.author %}
+      <div class="col-md-4">
+        <span class="text-muted"><a href="mailto:{{ site.email }}">{{ site.author | escape }}</a></span>
+      </div>
+      {% endif %}
+      <div class="col-md-4">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
