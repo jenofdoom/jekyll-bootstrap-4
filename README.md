@@ -1,3 +1,5 @@
+> This starter kit is **not maintained**. I'd suggest instead checking out [this article](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/), or if you want an example of a github pages jeykll repo using bootstrap 4 (not using a gem as GH pages doesn't support that) check out [this repository](https://github.com/JavaScript-NZ/nzjscon-website/tree/master/_sass).
+
 # Bootstrap 4 + Jekyll
 
 To use: when you have the dependancies as per
